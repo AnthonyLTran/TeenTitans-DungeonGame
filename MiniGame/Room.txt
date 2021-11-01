@@ -1,0 +1,91 @@
+RoomID,RoomName,RoomDescription,isVisited,[N,E,S,W],ItemID,PuzzleID,MonsterID
+1
+Dimly-lit Hall
+There is a Drowsy guard guarding the front entrance.
+----
+FALSE
+0,2,0,0
+0
+0
+1
+
+2
+Messy Visitor's Room
+A room from which visitors flee with their life.
+----
+FALSE
+0,0,5,1
+1
+0
+0
+
+3
+Nasty Kitchen
+Ancient kitchen in ruins.
+----
+FALSE
+0,0,6,0
+2
+0
+2
+
+4
+Cellar
+Piles of dusty antiques are abandoned here.
+----
+false
+0,5,7,0
+0
+1
+0
+
+5
+Mysterious Central Hall
+Array of Shelves are full of memorabilia.
+----
+false
+2,6,8,4
+3
+0
+0
+
+6
+Cold Dining Room
+Scary room full of broken dinner plates and glasses.
+----
+false
+3,0,0,5
+0
+3
+0
+
+7
+Secret Vault
+Looking for treasure...
+you are at the right place...
+----
+false
+4,0,0,0
+0
+0
+3
+
+8
+Dark Entertainment Room
+Ready for a haunted movie or some scary music?
+----
+false
+5,9,0,0
+0
+2
+0
+
+9
+Dusty Bedroom
+An abandoned room which was a luxurious bedroom.
+----
+false
+0,0,0,8
+4
+0
+0

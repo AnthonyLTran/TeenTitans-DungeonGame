@@ -1,0 +1,21 @@
+PuzzleID,PuzzleName,PuzzleDescription,Solution,NumberOfAttempts,isSolved
+1
+Funny Puzzle
+What is full of holes but still holds water?
+sponge
+3
+false
+
+2
+Fun Puzzle
+I fly when I am born, I lay when I am alive, and I run when I die. Who am I?
+snowflake
+5
+false
+
+3
+Sleep Puzzle
+What is so fragile that saying its name breaks it?
+silence
+3
+false

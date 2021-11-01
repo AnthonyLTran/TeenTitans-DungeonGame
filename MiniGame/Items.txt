@@ -1,0 +1,29 @@
+Category,ITemID,ItemName,ItemDescription,Damage/health Effect,isEquipped/Consumed
+equippable
+1
+CLUB
+Good for hitting one time.
+15
+false
+
+consumable
+2
+LUNCH SACK
+A lunch containing Grilled cheese sandwich.
+20
+false
+
+equippable
+3
+SWORD
+A sharp shinning sword.
+50
+false
+
+consumable
+4
+HEALTH POTION
+A small phial of red liquid that has healing properties.
+30
+false
+

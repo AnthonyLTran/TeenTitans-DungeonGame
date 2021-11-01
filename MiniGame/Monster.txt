@@ -1,0 +1,33 @@
+MonsterID,MonsterName,MonsterDescription,DefeatedDescription,HP,dealDamage,fixNumber,isDefeated
+1
+Drowsy Guard
+A sleeping man, guarding the front door.
+----
+You defeated the Drowsy Guard, you can go forward.
+****
+30
+10
+5
+false
+
+2
+Goblin
+A sneaky little troll looking for some loot to grab off adventurers. Watch your pouch-es!
+----
+Your pockets are now carefree knowing they will not be pick-pocketed today.
+****
+100
+25
+10
+false
+
+3
+Knight
+An elite Knight, guarding the vault.
+----
+You defeated the Knight, now all the treasures are yours for the taking!!!.
+****
+100
+25
+5
+false
