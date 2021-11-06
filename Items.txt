@@ -83,11 +83,11 @@ One of the few key needed to unlock the final boss.
 0
 false
 
-equippable
+usable
 13
 Golden Cup
-no description
-0
+A golden cup that seems like there is a type of drink inside.
+10
 false
 
 usable
