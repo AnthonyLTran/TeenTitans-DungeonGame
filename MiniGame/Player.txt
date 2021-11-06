@@ -1,4 +1,0 @@
-PlayerID,PlayerHP,PlayerDealDamage
-1
-100
-20

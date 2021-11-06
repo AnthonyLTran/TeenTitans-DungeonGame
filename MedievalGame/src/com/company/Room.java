@@ -4,14 +4,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Objects;
 
-/**
- * The class encapsulating room features
- */
 public class Room {
-    private int RoomID;
+    private String RoomID;
     private String RoomName;
     private ArrayList<String> roomDescription;
-    private HashMap<String,Integer> navTable;
+    private HashMap<String,String> navTable;
     private boolean visited;
 
 
@@ -22,7 +19,7 @@ public class Room {
     public Room() {
 
         roomDescription=new ArrayList<>();
-        navTable=new HashMap<String,Integer>();
+        navTable=new HashMap<String,String>();
         roomInventory=new ArrayList<>();
         puzzle=new Puzzle();
         puzzle.setSolved(true);
@@ -32,11 +29,11 @@ public class Room {
 
     }
 
-    public int getRoomID() {
+    public String getRoomID() {
         return RoomID;
     }
 
-    public void setRoomID(int roomID) {
+    public void setRoomID(String roomID) {
         RoomID = roomID;
     }
     public String getRoomName() {
@@ -55,11 +52,11 @@ public class Room {
         this.roomDescription = roomDescription;
     }
 
-    public HashMap<String, Integer> getNavTable() {
+    public HashMap<String, String> getNavTable() {
         return navTable;
     }
 
-    public void setNavTable(HashMap<String, Integer> navTable) {
+    public void setNavTable(HashMap<String, String> navTable) {
         this.navTable = navTable;
     }
 
@@ -114,7 +111,7 @@ public class Room {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Room room = (Room) o;
-        return RoomID == room.RoomID && visited == room.visited && Objects.equals(RoomName, room.RoomName) && Objects.equals(roomDescription, room.roomDescription) && Objects.equals(navTable, room.navTable) && Objects.equals(roomInventory, room.roomInventory) && Objects.equals(puzzle, room.puzzle) && Objects.equals(monster, room.monster);
+        return visited == room.visited && Objects.equals(RoomID, room.RoomID) && Objects.equals(RoomName, room.RoomName) && Objects.equals(roomDescription, room.roomDescription) && Objects.equals(navTable, room.navTable) && Objects.equals(roomInventory, room.roomInventory) && Objects.equals(puzzle, room.puzzle) && Objects.equals(monster, room.monster);
     }
 
     @Override
