@@ -1,14 +1,14 @@
 import java.util.Objects;
 
-public class Equippable extends Items {
+public class Equippable extends Item {
     private int damageEffect;
     private boolean isEquipped;
 
     public Equippable() {
     }
 
-    public Equippable(int id, String name, String Description, String type, int damageEffect) {
-        super(id, name, Description, type);
+    public Equippable(String id, String name, String Description, String type, int damageEffect, boolean isAvailable) {
+        super(id, name, Description, type,false);
         this.damageEffect = damageEffect;
         this.isEquipped = false;
     }

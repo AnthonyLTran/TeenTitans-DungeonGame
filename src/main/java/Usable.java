@@ -1,14 +1,15 @@
+
 import java.util.Objects;
 
-public class Consumable extends Items {
+public class Usable extends Item {
     private int healthEffect;
     private boolean isConsumed;
 
-    public Consumable() {
+    public Usable() {
     }
 
-    public Consumable(int id, String name, String Description, String type, int healthEffect) {
-        super(id, name, Description, type);
+    public Usable(String id, String name, String Description, String type, int healthEffect) {
+        super(id, name, Description, type, false);
         this.healthEffect = healthEffect;
         this.isConsumed = false;
     }
@@ -41,7 +42,7 @@ public class Consumable extends Items {
             if (!super.equals(o)) {
                 return false;
             } else {
-                Consumable that = (Consumable)o;
+                Usable that = (Usable)o;
                 return this.healthEffect == that.healthEffect && this.isConsumed == that.isConsumed;
             }
         } else {
