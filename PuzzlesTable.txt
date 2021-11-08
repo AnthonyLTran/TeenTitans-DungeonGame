@@ -1,3 +1,5 @@
+PuzzleID, PuzzleName, Description,----,solvedDescription,****,requiredItem,requiredString,NoOfAttempts,isSolved
+
 P1
 Tutorial Wall
 A smooth granite wall with a small circular indentation, maybe there is something nearby that might fit?
@@ -51,8 +53,8 @@ shine a light through the door to the next room
 ----
 Solved!
 ****
-11
 0
+the trident of kappa
 3
 false
 
