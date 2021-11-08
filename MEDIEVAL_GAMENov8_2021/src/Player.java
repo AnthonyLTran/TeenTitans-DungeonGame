@@ -199,7 +199,7 @@ public class Player extends GameCharacter {
     }
     public int attack() {
 
-        //System.out.println("&&&&&&&&&&&&&&&&&&&&&& Player from attack() : "+player);
+
         currentRoom = map.getRooms().get(getPlayerLocation());
         if (currentRoom.getMonster().isDefeated()) {
             System.out.println("This room has no monsters.");
@@ -320,8 +320,6 @@ public class Player extends GameCharacter {
                 System.out.println("You are not in combat.");
             } else {
                 System.out.println("You are leaving combat.");
-                //currentRoom.getMonster().setDefeated(true);
-
                 //set monster to full hp
                 currentRoom.getMonster().setCurrentHP(monsterOldHP);
             }

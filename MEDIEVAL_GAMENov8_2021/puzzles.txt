@@ -41,7 +41,7 @@ The door and the four keyholes are all that holds you in this prison
 ----
 The collected items glow and the path is opened.
 ****
-2
+10,12,16
 0
 3
 false

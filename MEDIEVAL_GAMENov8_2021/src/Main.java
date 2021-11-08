@@ -27,7 +27,7 @@ public class Main {
     private static int currentMode=1;//1:game mode,2:battle mode , 3:puzzle mode
     private static HashMap<String,Integer> commandsTable;//Holds the command used in the game and its types
     private static boolean isReload=false;
-    private static boolean isWon=false;
+
     /**
      * main game loop
      * first initialization is done.
@@ -87,8 +87,7 @@ public class Main {
 
         //display the first room
         displayCurrentRoom();
-        //if the room has puzzles , the puzzle is processed
-        //processPuzzle();
+
 
     }
 
@@ -127,10 +126,7 @@ public class Main {
                 System.out.print("Invalid command.\n");
                 break;
             case 1:
-
                 displayCurrentRoom();//displays current room
-                //processPuzzle();//puzzle logic
-
                 break;
             case 2 :
                 displayHelp();//displays help
@@ -139,9 +135,7 @@ public class Main {
                 quitRoutine();//quit command logic
                 break;
             case 4:
-
                 restartRoutine();//restart command logic
-                isWon=false;
                 break;
             case 5:
                 mainMenu();//displays main menu
@@ -150,15 +144,12 @@ public class Main {
                 player.displayInventory();//displays the inventory if any items are picked up
                 break;
             case 7:
-                //currentCommand = "explore";
                 player.exploreCurrentRoom(currentCommand);
-                //currentCommand = "";
                 break;
             case 8:
                 currentMode = player.attack();//the combat between the player and monster
                 if (currentMode == -1) {
                     gameOverRoutine();//The monster defeated the player
-
                 }
                 break;
             case 9://the player leaves the combat.
@@ -193,11 +184,11 @@ public class Main {
                 puzzleRoutine();//The puzzle is processed
                 break;
             case 19:
-                saveGameRoutine();
+                saveGameRoutine();//saves the game
                 break;
             case 20:
                 isReload=true;
-                reloadGameRoutine();
+                reloadGameRoutine();//loads the previously saved game
                 break;
             default:
                 break;
@@ -214,14 +205,14 @@ public class Main {
             input = new Input("OldPlayer.txt", "OldItems.txt", "OldPuzzles.txt",
                     "OldMonsters.txt", "OldRoom.txt");//reads and creates the game data from file
 
-            //keyboard=new Scanner(System.in);
+
             commandsTable = input.getCommandsTable();
             player = Input.getPlayer();
             Player.setPlayer(player);
             currentMode = player.getCurrentMode();
-            System.out.println("PLayer from reload Game routine () : " + player);
+
             System.out.println(player.map);
-            //player.map.getRoom("TLR1");
+
             player.map.getRoom(player.getRoomID());
 
 
@@ -231,7 +222,7 @@ public class Main {
 
             //display the first room
             displayCurrentRoom();
-            //processPuzzle();
+
         }
     }
 
@@ -316,7 +307,7 @@ public class Main {
 
         String direction="";
         String str="";
-        // ="The valid directions from this room are :";
+
         if(((direction=navTable.get("north"))).compareTo("0")!=0){
 
             str+=" [North: "+player.map.getRoomName(direction)+"]";
@@ -431,6 +422,7 @@ public class Main {
         }else {
             restartRoutine();
             currentMode=1;
+
         }
 
     }
@@ -448,7 +440,7 @@ public class Main {
     private static void displayCurrentRoom() {
 
         currentRoom=player.map.getRooms().get(player.getPlayerLocation());
-        if(isWon){
+        if(currentRoom.getRoomID().compareTo("TLR7")==0){
 
             ArrayList<String> descriptions = currentRoom.getRoomDescription();
             for(String s : descriptions){
@@ -458,7 +450,7 @@ public class Main {
             gameOverRoutine();
             return;
         }
-        isWon=false;
+
         System.out.println("You are at the "+currentRoom.getRoomName());
 
 
@@ -567,11 +559,11 @@ public class Main {
         }
         currentRoom.getPuzzle().setSolved(true);
         currentRoom.setCanGoForward("0");
-        if(currentRoom.getPuzzle().getPuzzleID().compareTo("P5")==0){
-            isWon=true;
-        }else{
-            isWon=false;
-        }
+//        if(currentRoom.getPuzzle().getPuzzleID().compareTo("P5")==0){
+//            isWon=true;
+//        }else{
+//            isWon=false;
+//        }
         System.out.println(currentRoom.getPuzzle().getSolvedDescription());
         for (int i = 0; i < currentRoom.getPuzzle().getRequiredItem().size(); i++) {
             for (int j = 0; j < playerInventory.size(); j++) {
@@ -654,7 +646,6 @@ public class Main {
             initialization();
 
             currentMode=1;//navigation mode
-            isWon=false;
 
         }
         else{
