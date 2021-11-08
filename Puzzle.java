@@ -1,6 +1,3 @@
-package FreeSpace;
-
-
 import java.util.ArrayList;
 import java.util.Objects;
 
