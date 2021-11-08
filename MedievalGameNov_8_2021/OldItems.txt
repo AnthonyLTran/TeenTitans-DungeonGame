@@ -1,0 +1,118 @@
+File format :ItemType,ItemID,ItemName,Description,damage/healthEffect,isUsed,isAvailableToPickup
+
+usable
+11
+The Trident of Kappa
+A weapon/artifact of ocean-associated powers.
+20
+false
+false
+false
+
+usable
+12
+Key 2
+One of the few key needed to unlock the final boss.
+0
+false
+false
+false
+
+usable
+14
+Cooked Chicken
+A tasty looking chicken. A little burnt on the leg, but otherwise very gourmet.
+10
+false
+false
+false
+
+equippable
+9
+Sword
+A sword not of the highest quality but durable enough to be useful in the journey.
+15
+false
+false
+false
+
+usable
+3
+Health Potion
+A small phial of red liquid that has healing properties.
+20
+true
+true
+true
+
+usable
+13
+Golden Cup
+A golden cup that seems like there is a type of drink inside.
+10
+false
+true
+false
+
+equippable
+5
+Pelt
+Wolf pelt, thick enough to defend against light blows.
+10
+false
+false
+false
+
+usable
+6
+Treant Heart
+The last remnant of a living tree, the rest having withered to dust the moment it was slain.
+0
+false
+false
+false
+
+usable
+7
+Humming Flower
+A beautiful flower emitting an audible hum. Could it be magical?
+0
+false
+true
+false
+
+usable
+8
+Wooden Medal
+An intricately carved wooden medallion.
+0
+false
+true
+false
+
+usable
+15
+Spell book
+A book full of magical spells and recipes for potions.
+0
+false
+true
+false
+
+usable
+16
+Key 1
+A key dropped by the witch of the swamp. One of the four keys needed to escape the castle.
+0
+false
+false
+false
+
+usable
+10
+Final Key 3
+A key dropped by the Knight of the Tower. It is one of the three keys needed to escape the castle.
+0
+false
+true
+false

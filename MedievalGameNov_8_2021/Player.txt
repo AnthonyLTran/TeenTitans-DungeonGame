@@ -1,0 +1,10 @@
+PlayerID,PlayerHP,PlayerDealDamage,PLayerInventory,CurrentRoomID,RoundCount,equippedItems,currentMode.MonsterOldHP
+1
+500
+20
+0
+TLR1
+1
+0
+1
+0
