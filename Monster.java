@@ -1,27 +1,26 @@
-package FreeSpace;
-
 import java.util.ArrayList;
 import java.util.Objects;
+
 /**
  * A subclass of the GameCharacter class encapsulating the functions of the monster character
  */
 public class Monster {
 
-    private int monsterID;
+    private String monsterID;
     private String monsterName;
     private ArrayList<String> monsterDescription;
     private ArrayList<String> defeatedDescription;
     private int currentHP;
     private int dealDamage;
-    private Item droppedItem;
+    private String droppedItem;
     private int fixNumber;
-    private boolean defeated;
+    private boolean defeated = true;
 
-    public int getMonsterID() {
+    public String getMonsterID() {
         return monsterID;
     }
 
-    public void setMonsterID(int monsterID) {
+    public void setMonsterID(String monsterID) {
         this.monsterID = monsterID;
     }
 
@@ -65,11 +64,11 @@ public class Monster {
         this.dealDamage = dealDamage;
     }
 
-    public Item getDroppedItem() {
+    public String getDroppedItem() {
         return droppedItem;
     }
 
-    public void setDroppedItem(Item droppedItem) {
+    public void setDroppedItem(String droppedItem) {
         this.droppedItem = droppedItem;
     }
 
