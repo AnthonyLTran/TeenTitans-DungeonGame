@@ -13,9 +13,9 @@ west or w ..........moves to the adjacent west room
 
 ====Inspect=====
 
+explore room......system will display room information
 inspect item......system will display item information
 inspect monster...system will display monster information
-inspect room......system will display room information
 inspect puzzle....system will display puzzle information
 
 List of Classes
@@ -54,3 +54,4 @@ Puzzles.txt
 Monsters.txt
 Items.txt
 Rooms.txt
+Commands.txt
