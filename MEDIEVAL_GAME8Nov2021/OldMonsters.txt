@@ -1,0 +1,111 @@
+MonsterID,MonsterName,MonsterDescription,----,DefeatedDescription,****,currentHP,dealDamage,droppedItem,isDefeated
+
+UB1
+Kappa
+A small, green goblin-like creature,  low health, but very high damage.
+----
+Very slow attack rate, could be defeated easily with most weapon in 1-2 attacks.
+****
+25
+50
+11
+false
+
+UB2
+Kekkai
+A doll-like creature, very small, low damage but extremely tanky
+----
+Kekkai dies slowly and miserably and drops a key
+****
+10
+5
+12
+false
+
+SM1
+Goblin
+A sneaky little troll looking for some loot to grab off adventurers. Watch your pouch-es!
+----
+Your pockets are now carefree knowing they will not be pick-pocketed today.
+****
+30
+10
+14
+false
+
+TM3
+Grunt
+A very basic looking enemy. From the way he holds his sword you can tell he is newly recruited.
+----
+The grunt drops his sword and staggers to the ground mumbling "This job wasn't worth the pay."
+****
+45
+10
+9
+false
+
+TM2
+Knight
+An elite Knight, guarding the vault.
+----
+You defeated the Knight, now all the treasures are yours for the taking!!!.
+****
+150
+25
+10
+false
+
+WM1
+Wolf
+The wolf appears malnourished, and can probably be easily slain.
+----
+The wolf goes down without much of a fight, its pelt may prove useful in the adventure to come.
+****
+30
+10
+5
+false
+
+WM2
+Treant
+The lumbering giant appears slow and sturdy. Will not go down without a fight.
+----
+The treant withers as it dies, leaving only a glowing knot of wood.
+****
+50
+15
+6
+false
+
+TLM2
+Shady Merchant
+A frail looking merchant, most of his ware look useless, with the exception of a Rusty Dagger.
+----
+The man falls to the ground, you take his only useful possession.
+****
+1
+1
+4
+false
+
+SM2
+Witch
+Living in a hut with her black cat of misfortune, the witch goes looking for intruders in her swamp to use for the next stew dinner
+----
+You can be excited for dinner now that you know it will not be you!
+****
+80
+30
+16
+false
+
+TLM1
+Drowsy Guard
+A sleeping man, guarding the front door.
+----
+You defeated the Drowsy Guard, you can go forward.
+****
+1
+1
+3
+false
