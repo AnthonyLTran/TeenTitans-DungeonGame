@@ -1,31 +1,32 @@
 package FreeSpace;
 
 
-import MiniTextGame.Item;
-
+import java.util.ArrayList;
 import java.util.Objects;
 
 /**
  * The class encapsulating the puzzle features
  */
+
 public class Puzzle {
-    private int puzzleID;
+    private String puzzleID;
     private String puzzleName;
-    private String puzzleDescription;
+    private ArrayList<String> puzzleDescription;
+    private String solvedDescription;
     private String requiredString;
-    private Item requiredItem;
+    private ArrayList<String> requiredItem;
     private int noOfAttempts;
     private boolean solved;
 
     public Puzzle() {
-        this.solved=true;
+        this.solved = true;
     }
 
-    public int getPuzzleID() {
+    public String getPuzzleID() {
         return puzzleID;
     }
 
-    public void setPuzzleID(int puzzleID) {
+    public void setPuzzleID(String puzzleID) {
         this.puzzleID = puzzleID;
     }
 
@@ -37,12 +38,20 @@ public class Puzzle {
         this.puzzleName = puzzleName;
     }
 
-    public String getPuzzleDescription() {
+    public ArrayList<String> getPuzzleDescription() {
         return puzzleDescription;
     }
 
-    public void setPuzzleDescription(String puzzleDescription) {
+    public void setPuzzleDescription(ArrayList<String> puzzleDescription) {
         this.puzzleDescription = puzzleDescription;
+    }
+
+    public String getSolvedDescription() {
+        return solvedDescription;
+    }
+
+    public void setSolvedDescription(String solvedDescription) {
+        this.solvedDescription = solvedDescription;
     }
 
     public String getRequiredString() {
@@ -53,11 +62,11 @@ public class Puzzle {
         this.requiredString = requiredString;
     }
 
-    public Item getRequiredItem() {
+    public ArrayList<String> getRequiredItem() {
         return requiredItem;
     }
 
-    public void setRequiredItem(Item requiredItem) {
+    public void setRequiredItem(ArrayList<String> requiredItem) {
         this.requiredItem = requiredItem;
     }
 
@@ -82,7 +91,8 @@ public class Puzzle {
         return "Puzzle{" +
                 "puzzleID=" + puzzleID +
                 ", puzzleName='" + puzzleName + '\'' +
-                ", puzzleDescription='" + puzzleDescription + '\'' +
+                ", puzzleDescription=" + puzzleDescription +
+                ", solvedDescription='" + solvedDescription + '\'' +
                 ", requiredString='" + requiredString + '\'' +
                 ", requiredItem=" + requiredItem +
                 ", noOfAttempts=" + noOfAttempts +
@@ -95,12 +105,11 @@ public class Puzzle {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Puzzle puzzle = (Puzzle) o;
-        return puzzleID == puzzle.puzzleID && noOfAttempts == puzzle.noOfAttempts && solved == puzzle.solved && Objects.equals(puzzleName, puzzle.puzzleName)
-                && Objects.equals(puzzleDescription, puzzle.puzzleDescription) && Objects.equals(requiredString, puzzle.requiredString) && Objects.equals(requiredItem, puzzle.requiredItem);
+        return puzzleID == puzzle.puzzleID && noOfAttempts == puzzle.noOfAttempts && solved == puzzle.solved && Objects.equals(puzzleName, puzzle.puzzleName) && Objects.equals(puzzleDescription, puzzle.puzzleDescription) && Objects.equals(solvedDescription, puzzle.solvedDescription) && Objects.equals(requiredString, puzzle.requiredString) && Objects.equals(requiredItem, puzzle.requiredItem);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(puzzleID, puzzleName, puzzleDescription,requiredString, requiredItem, noOfAttempts, solved);
+        return Objects.hash(puzzleID, puzzleName, puzzleDescription, solvedDescription, requiredString, requiredItem, noOfAttempts, solved);
     }
 }
